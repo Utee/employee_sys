@@ -20,3 +20,24 @@ A web-based application to manage employees efficiently. Features include employ
 - Deployment: To be hosted on a cloud provider (e.g., AWS, Heroku).
 
 
+### API endpoints
+
+| Endpoint                              | Method | Description                          |
+|---------------------------------------|--------|--------------------------------------|
+| `/api/employees/register/`            | POST   | Register a new employee              |
+| `/api/employees/login/`               | POST   | Login an employee                    |
+| `/api/employees/profile/`             | GET    | Get employee profile                 |
+| `/api/employees/profile/update/`      | PUT    | Update employee profile              |
+| `/api/password_reset/`                | POST   | Initiate password reset              |
+| `/api/tasks/`                         | GET    | Fetch all tasks                      |
+| `/api/tasks/create/`                  | POST   | Create a new task                    |
+| `/api/tasks/assign/`                  | POST   | Assign a task to an employee         |
+| `/api/tasks/status/<int:pk>/`         | PATCH  | Update task status                   |
+| `/api/notifications/`                 | GET    | Fetch notifications                  |
+| `/api/notifications/send/`            | POST   | Send a notification to an employee   |
+| `/api/notifications/create/`          | POST   | Create a custom notification         |
+| `/api/notifications/read/<int:pk>/`   | PATCH  | Mark a notification as read          |
+| `/api/employee/<int:pk>/activate/`    | PATCH  | Activate an employee account         |
+| `/api/analytics/`                     | GET    | View analytics data                  |
+| `/api/audit-logs/`                    | GET    | View audit logs                      |
+
